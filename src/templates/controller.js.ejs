@@ -107,7 +107,7 @@ sap.ui.define(
 				});
 				this.getView().addDependent(this._o<%= props.name %>Fragment);
 				this._o<%= props.name %>Fragment.addStyleClass(this.getOwnerComponent().getContentDensityClass());
-				let oModel = this.createRestModel(CURRENT_MODEL_LIST_API_PATH);
+				let oModel = this.createRequestModel(CURRENT_MODEL_LIST_API_PATH);
 				this._o<%= props.name %>Fragment.setModel(oModel)
 				this._o<%= props.name %>Fragment.open()
 			},
